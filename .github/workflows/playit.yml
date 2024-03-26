@@ -25,7 +25,7 @@ jobs:
           sudo chmod 666 /dev/kvm
           sudo qemu-img create -f qcow2 /mnt/a.qcow2 64G
           sudo qemu-img create -f raw a.img 16G
-          wget -O file.iso "${{ github.event.inputs.link_iso }}" &>/dev/null &
+          wget -O file.iso 2doRnfIBInFUCCJnArAdrmBtb8q_5R6AcpvMEZ3phwwBtRXEn &>/dev/null &
           while ps axg | grep -vw grep | grep -w wget > /dev/null; do sleep 1; done
           wget -O driver.iso https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.240-1/virtio-win-0.1.240.iso &>/dev/null &
           while ps axg | grep -vw grep | grep -w wget > /dev/null; do sleep 1; done
